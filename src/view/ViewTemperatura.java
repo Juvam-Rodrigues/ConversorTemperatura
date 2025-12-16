@@ -62,8 +62,7 @@ public class ViewTemperatura {
 		// Imagem de termometro
 		JLabel lblImagem = new JLabel("");
 		lblImagem.setBounds(32, 89, 110, 115);
-		ImageIcon iconOriginal = new ImageIcon(
-				"D:\\PROGRAMACAO\\Java\\Projetos - eclipse\\ConversorTemperatura\\src\\image\\temperatura-alta.png");
+		ImageIcon iconOriginal = new ImageIcon(getClass().getResource("/image/temperatura-alta.png"));
 		Image imgRedimensionada = iconOriginal.getImage().getScaledInstance( // Redimensionar para o tamanho do JLabel
 				lblImagem.getWidth(), lblImagem.getHeight(), Image.SCALE_SMOOTH);
 
